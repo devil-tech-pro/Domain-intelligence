@@ -1,0 +1,31 @@
+{
+  "name": "domain-intelligence-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Domain Intelligence Tool",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "migrate": "node src/scripts/migrate.js"
+  },
+  "dependencies": {
+    "express": "^1^.18.2",
+    "cors": "^2^.8.5",
+    "helmet": "^3^.0.0",
+    "morgan": "^4^.10.0",
+    "dotenv": "^5^.3.1",
+    "pg": "^6^.11.3",
+    "redis": "^1^.6.8",
+    "axios": "^4^.5.0",
+    "express-rate-limit": "^7^.10.0",
+    "express-validator": "^3^.0.1",
+    "puppeteer": "^8^.1.1",
+    "uuid": "^9^.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^10^.0.1",
+    "jest": "^11^.6.4",
+    "supertest": "^7^.3.3"
+  }
+}
