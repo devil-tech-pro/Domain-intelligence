@@ -2,7 +2,9 @@
   "name": "domain-intelligence-tool",
   "version": "1.0.0",
   "description": "A comprehensive domain intelligence tool for cybersecurity analysis",
+  "private": true,
   "main": "index.js",
+
   "scripts": {
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:backend": "cd backend && npm start",
@@ -11,20 +13,31 @@
     "build": "cd frontend && npm run build",
     "test": "cd backend && npm test && cd ../frontend && npm test"
   },
+
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/domain-intelligence-tool.git"
+    "url": "https://github.com/yourusername/domain-intelligence-tool.git"
   },
+
   "keywords": [
     "cybersecurity",
     "domain-intelligence",
     "whois",
     "dns",
-    "ssl"
+    "ssl",
+    "osint",
+    "threat-intelligence"
   ],
+
   "author": "Your Name",
   "license": "MIT",
+
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+
   "devDependencies": {
-    "concurrently": "1.6.0"
+    "concurrently": "^9.2.0"
   }
 }
